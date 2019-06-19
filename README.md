@@ -2,7 +2,7 @@
 
 # JavaScript Array HW
 
-Create a file in this repository named `homework.js` to save your solutions.
+Please create a branch called `homework`. Then, create a file named `homework.js` to save your solutions.
 
 <ol>
   <li>Create a function that will get the sum of the numbers between 1 and n and return the answer
