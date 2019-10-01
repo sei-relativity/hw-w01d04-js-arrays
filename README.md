@@ -66,6 +66,7 @@ Create word guessing game where the user gets infinite tries to guess the word (
 const wordLetters     = ['G', 'O', 'A', 'T'];
 const guessedLetters  = ['_', '_', '_', '_'];
 
+
 // playing the game
 guessLetter('G'); // "Correct, G _ _ _"
 guessLetter('I'); // "Incorrect, G _ _ _"
