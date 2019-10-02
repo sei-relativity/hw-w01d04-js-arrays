@@ -40,7 +40,15 @@ array = ['test1', 'test2', 'test3']
 const addDashes = function(arr){
     return arr.join("-");
 }
+
 // 6
+const countUpAndDown = function(n){
+    for (let index = 1; index <= n; index++) {
+        console.log(index);        
+    } for (index = n; index > 0; index--) {
+        console.log(index);
+    }
+}
 // 7
 // 8
 // 9
