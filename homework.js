@@ -22,16 +22,16 @@ const summationEven = function (num) {
 //  average numbers array
 const avg = function (numArr) {
     let sum = 0;
-    for (i = 0; i <= numArr.length; i++) {
-        sum += numArr[i];
+    for (i = 0; i < numArr.length; i++) {
+        sum += numArr[i]/numArr.length;
     }
-    return (sum / numArr);
+    return sum / numArr.length;
 }
 
 //  4.
 //  reverse string
 const reverse = function (inString) {
-    let splitString = str.split("");
+    let splitString = inString.split("");
     let reverseArray = splitString.reverse();
     return reverseArray.join("");
 }
@@ -91,7 +91,7 @@ const longestWord = function (inString) {
 //  10.
 //  return the largest even number from numbers array
 const largestEvenNumber = function (numArr) {
-    let largestEven;
+    let largestEven = -999;
 
     for (let i = 0; i < numArr.length; i++) {
         if (numArr[i] % 2 == 0) {
