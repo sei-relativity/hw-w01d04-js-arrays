@@ -26,7 +26,15 @@ const avg = function(array) {
         sum += element;        
     } return sum /array.length;
 }
+
 // 4
+const reverse = function(word) {
+    let arr = word.split("");
+    let reversearr = arr.reverse();
+    let joinarr = reversearr.join("");
+    return joinarr;
+}
+
 // 5
 // 6
 // 7
