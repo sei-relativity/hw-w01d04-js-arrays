@@ -61,6 +61,7 @@ const wordWithA = function() {
         }
     } return arraywitha;
 }
+
 // 8
 const arr =['cat', 'rabbit', 'dog', 'frog']
 const wordWithLetter = function(letter) {
@@ -72,6 +73,7 @@ const wordWithLetter = function(letter) {
         }
     } return arraywitha;
 }
+
 // 9
 const longestword = function(sentense){
     let splitSentence = sentense.split(" ")
@@ -84,7 +86,23 @@ const longestword = function(sentense){
         }
     } return "longest word in the sentence is " +  result;
 }
+
 // 10
+const arr = [1,2,3,10,4,7,0];
+const largeEvenNumber = function (arr) {
+    let evens = [];
+    let largestEven = "";
+    for (let index = 0; index < arr.length; index++) {
+        if (arr[index]%2 == 0) {
+            evens.push(arr[index]);
+        }
+    
+    } for (let i = 0; i < evens.length; i++) {
+        if (evens[i] > largestEven) {            
+            largestEven = evens[i];
+        }
+    } return "largest even number is " + largestEven;
+}
 
 
 
