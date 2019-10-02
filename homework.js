@@ -49,9 +49,41 @@ const countUpAndDown = function(n){
         console.log(index);
     }
 }
+
 // 7
+const arr =['cat', 'rabbit', 'dog', 'frog']
+const wordWithA = function() {
+    let arraywitha = [];
+    for (let index = 0; index < arr.length; index++) {
+        const element = arr[index];
+        if (element.includes("a")) {
+            arraywitha.push(element);
+        }
+    } return arraywitha;
+}
 // 8
+const arr =['cat', 'rabbit', 'dog', 'frog']
+const wordWithLetter = function(letter) {
+    let arraywitha = [];
+    for (let index = 0; index < arr.length; index++) {
+        const element = arr[index];
+        if (element.includes(letter)) {
+            arraywitha.push(element);
+        }
+    } return arraywitha;
+}
 // 9
+const longestword = function(sentense){
+    let splitSentence = sentense.split(" ")
+    let maxWord = 0;
+    let result = "";
+    for (let index = 0; index < splitSentence.length; index++) {
+        if (splitSentence[index].length > maxWord) {
+            maxWord = splitSentence[index].length;
+            result = splitSentence[index];            
+        }
+    } return "longest word in the sentence is " +  result;
+}
 // 10
 
 
