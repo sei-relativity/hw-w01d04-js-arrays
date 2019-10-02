@@ -39,7 +39,10 @@ const wordsWithA = a => {
   let res = [];
   for (let i = 0; i < a.length; i++) {
     for (j = 0; j < a[i].length; j++) {
-      a[i][j] === "a" ? res.push(a[i]) : null;
+      if (a[i][j] === "a") {
+        res.push(a[i]);
+        break;
+      }
     }
   }
   console.log(res);
@@ -50,7 +53,10 @@ const wordsWithLetter = (letter, a) => {
   let res = [];
   for (let i = 0; i < a.length; i++) {
     for (j = 0; j < a[i].length; j++) {
-      a[i][j] === letter ? res.push(a[i]) : null;
+      if (a[i][j] === letter) {
+        res.push(a[i]);
+        break;
+      }
     }
   }
   console.log(res);
