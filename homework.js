@@ -23,7 +23,7 @@ const summationEven = function (num) {
 const avg = function (numArr) {
     let sum = 0;
     for (i = 0; i < numArr.length; i++) {
-        sum += numArr[i]/numArr.length;
+        sum += numArr[i];
     }
     return sum / numArr.length;
 }
@@ -57,9 +57,11 @@ const countUpAndDown = function (num) {
 //  list words with an A from a word array
 const wordsWithA = function (wordArr) {
     const wordsA = [];
+    let wordS = ""
     for (i = 0; i <= wordArr.length; i++) {
-        if (wordArr[i].includes('a') || wordArr[i].includes('A'))
-            wordsA.push(wordArr[i]);
+        wordS = ""+wordArr[i];
+        if (wordS.indexOf('a') != -1 || wordS.indexOf('A') != -1)
+            wordsA.push(wordS);
     }
     return wordsA;
 }
@@ -68,9 +70,11 @@ const wordsWithA = function (wordArr) {
 //  list words with a selected letter from word array
 const wordsWithLetter = function (letter, wordArr) {
     const wordsL = [];
+    let wordS = ""
     for (i = 0; i <= wordArr.length; i++) {
-        if (wordArr[i].includes(letter))
-            wordsL.push(wordArr[i]);
+        wordS = ""+wordArr[i];
+        if (wordS.indexOf(letter) != -1)
+            wordsL.push(wordS);
     }
     return wordsL;
 }
