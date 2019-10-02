@@ -107,14 +107,6 @@ const longestWord = function (words) {
     }
     return n;
 }
-
-const longestWord = function (word) {
-    let longestWord = word.split(' ').reduce(function (longestWord, currentWord) {
-        return currentWord.length > longestWord.length ? currentWord : longestWord;
-    }, "");
-    return longestWord.length;
-}
-
 const longestWord = function (word) {
     let str = word.split(" ");
     let longest = 0;
