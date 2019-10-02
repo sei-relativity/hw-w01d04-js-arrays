@@ -36,6 +36,10 @@ const reverse = function(word) {
 }
 
 // 5
+array = ['test1', 'test2', 'test3']
+const addDashes = function(arr){
+    return arr.join("-");
+}
 // 6
 // 7
 // 8
