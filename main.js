@@ -56,6 +56,8 @@ const reverse = function(word) {
     return word.split("").reverse().join("");
 }
 console.log(reverse("caterpillar"))
+console.log(reverse("hello"))
+
 
 //   <li>Create a function that takes an array of words and combines them with a dash
 //   <br>
@@ -85,6 +87,8 @@ const countUpAndDown = function(num) {
 }
 
 console.log(countUpAndDown(3))
+console.log(countUpAndDown(7))
+
 
 //   <li>Write a function that will tell you all of the words in an array that contain the letter `a`
 //   <br>
@@ -120,6 +124,8 @@ const wordsWithLetter = function(letter, arr) {
 
 }
 console.log(wordsWithLetter('g', ['cat', 'rabbit', 'dog', 'frog']))
+console.log(wordsWithLetter('r', ['cat', 'rabbit', 'dog', 'frog', 'turtle']))
+
 
 //   <li>Function that returns the longest word in sentence
 //   <br>
@@ -128,10 +134,10 @@ console.log(wordsWithLetter('g', ['cat', 'rabbit', 'dog', 'frog']))
 
 const longestWord = function(string) {
     wordArr = string.split(' ')
-    let count = 0;
+    let count = '';
 
-    for (let i = 1; i < wordArr.length; i++) {
-        if (wordArr[i - 1].length <= wordArr[i].length) {
+    for (let i = 0; i < wordArr.length; i++) {
+        if (count.length <= wordArr[i].length) {
             count = wordArr[i];
         }
     }
@@ -139,6 +145,8 @@ const longestWord = function(string) {
 }
 
 console.log(longestWord("The cat in the house"))
+console.log(longestWord("the homework is soo long"))
+
 
 //   <li>Function that returns the largest even number
 //   <br>
@@ -158,34 +166,4 @@ const largestEvenNumber = function(num) {
 }
 
 console.log(largestEvenNumber([1, 2, 3, 10, 4, 7, 0]))
-    // ## Extra Practice
-
-// Create word guessing game where the user gets infinite tries to guess the word (like Hangman without the hangman, or like Wheel of Fortune without the wheel and fortune).
-
-// - Create two global arrays: one to hold the letters of the word (e.g. `['F', 'O', 'X']`), and one to hold the current guessed letters (e.g. it would start with `['_', '_', '_]'` and end with `['F', 'O', 'X']`)`.
-// - Write a function called guessLetter that will:
-//   - Take one argument, the guessed letter.
-//   - Iterate through the word letters and see if the guessed letter is in there.
-//   - If the guessed letter matches a word letter, changed the guessed letters array to reflect that.
-//   - When it's done iterating, it should log the current guessed letters ('F__') and congratulate the user if they found a new letter.
-//   - It should also figure out if there are any more letters that need to be guessed, and if not, it should congratulate the user for winning the game.
-//   - Pretend you don't know the word, and call guessLetter multiple times with various letters to check that your program works.
-
-// ```js
-// // start of the game
-// const wordLetters     = ['G', 'O', 'A', 'T'];
-// const guessedLetters  = ['_', '_', '_', '_'];
-
-
-// // playing the game
-// guessLetter('G'); // "Correct, G _ _ _"
-// guessLetter('I'); // "Incorrect, G _ _ _"
-// guessLetter('O'); // "Correct, G O _ _"
-// guessLetter('A'); // "Correct, G O A _"
-// guessLetter('L'); // "Incorrect, G O A _"
-// guessLetter('T'); // "You Win, G O A T"
-// ```
-// **How To: Make it like Hangman:**
-// - Keep track of all the guessed letters (right and wrong) and only let the user guess a letter once. If they guess a letter twice, do nothing.
-// - Keep track of the state of the hangman as a number (starting at 0), and subtract or add to that number every time they make a wrong guess.
-// - Once the number reaches 6 (a reasonable number of body parts for a hangman), inform the user that they lost and show a hangman on the log.
+console.log(largestEvenNumber([1, 200, 3, 10, 12, 4, 7, 0]))
