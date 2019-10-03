@@ -7,7 +7,9 @@ Please create a branch called `homework`. Then, create a file named `homework.js
 <ol>
   <li>Create a function that will get the sum of the numbers between 1 and n and return the answer
   <br> 
+  
   ```
+  
   const summation= function (n) {
   let total = 0;
     for(let i = 1; i <= n; i++){
@@ -15,11 +17,13 @@ Please create a branch called `homework`. Then, create a file named `homework.js
     }
     return total;
 }
+
   ```
     <code>summation(5) // should return 15 because 1+2+3+4+5=15</code>
   </li>
   <li>Create a program to get the sum of all the even numbers in a group
   <br>
+
   ```
   const summationEvenn=function (n){
 	let sum=0;
@@ -27,6 +31,7 @@ Please create a branch called `homework`. Then, create a file named `homework.js
 		if(a%2 === 0){
 		sum =sum+a;}
 }}
+
 ```
     <code > summationEven(5) // should return 6 because 2+4=6</code>
   </li>
@@ -37,28 +42,34 @@ Please create a branch called `homework`. Then, create a file named `homework.js
   </li>
   <li>Create a function to reverse the letters in a word
   <br>
-  ```
+
+```
   const reverse = function (string){
 	let wordAsArray = string.split("");
   let wordReverse = wordAsArray.reverse();
   let wordJoin = wordReverse.join("");
     return wordJoin;}
-    ```
-    <code > reverse("caterpillar") // should return "rallipretac"</code>
+
+```
+  <code> reverse("caterpillar") // should return "rallipretac"</code>
   </li>
   <li>Create a function that takes an array of words and combines them with a dash
   <br>
-  ```
+
+
+```
   const addDashes = function (){
 	let arr= ["test1", "test2", "test3"];
 	let arrJoin = arr.join("-");
 		return arrJoin;
 }
+
 ```
-    <code > addDashes(['test1', 'test2', 'test3']) // should return "test1-test2-test3"</code>
+  <code> addDashes(['test1', 'test2', 'test3']) // should return "test1-test2-test3"</code>
   </li>
   <li>Function that will count up to a number and back down and return a string of the climb
   <br>
+  
   ```
   function countdown(i)
 {
@@ -67,8 +78,8 @@ Please create a branch called `homework`. Then, create a file named `homework.js
     return i + " " + countdown(--i);
 
 }
-  ``
-    <code> countUpAndDown(3) // should return "1 2 3 2 1"</code>
+```
+  <code> countUpAndDown(3) // should return "1 2 3 2 1"</code>
   </li>
   <li>Write a function that will tell you all of the words in an array that contain the letter `a`
   <br>
