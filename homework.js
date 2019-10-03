@@ -53,3 +53,34 @@ combines();
 
 ###############################
 
+
+let num = function(n){
+    for (let i = 0; i <= n; i++){
+        console.log(i);
+        if( i == n){
+            for(let m = n -1; m > 0; m--){
+                console.log(m);
+            }
+        }
+    }
+    
+    }
+
+    num(5);
+
+    ##############################
+
+let arr1 = [];
+let arr2 = [];
+let look = function(arr1){
+for(let i = 0; i < arr1.length; i++){
+if(arr1[i].indexOf("a") != -1){
+    arr2.push(arr1[i]);
+}
+
+}
+console.log(arr2);
+}
+look(['cat', 'rabbit', 'dog', 'frog']);
+
+####################################
