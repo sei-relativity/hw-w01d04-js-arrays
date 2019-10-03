@@ -134,7 +134,9 @@ const longestWord = function(word) {
     theLongestWord = 0;
 
     for (var i = 0; i < splittedWord.length; i++) {
+
         if (splittedWord[i].length > theLongestWord) {
+
             theLongestWord = "The longest" +splittedWord[i].length;
         }
     }
