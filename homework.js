@@ -1,30 +1,41 @@
-const n = [1, 2, 3, 4, 5]
-const summ = function sumArr(n){
-    for (i = 0; n, i)
-        return n + i
-    })
+// #1
 
+const summ = function (n) {
+	let vr = 0;
+  for (let i=0; i <= n.length; i++) {
+	  vr += i; 
 }
+return vr 
+};
 
-let numArr = [1, 2, 3, 4, 5, 6];
-const x = function(numArr){
-    for (numArr %2 !==0){
-
-    }
+// #2
+const summ = function (n) {
+	let vr = 0;
+  for (let i=0; i < n.length; i++) {
+    if (n[i] % 2 === 0){
+      vr += i;   
+    } 
 }
+return vr 
+};
 
 // #3
 
-let num = [1, 2, 3, 4, 5];
-
-let maxElement = -1
-const summ = function sumArr(n){
-    for(i = 0; n.length; i++) {
-      if (n[i] > maxElement){
-        maxElement = n[i];
-      }
-      
-    }
+const summ = function (n) {
+	let vr = 0;
+  let div = 0;
+  for (let i=0; i <= n.length; i++) {
+    vr += i;
+    
+    div += vr /n.length
 }
+return div 
+};
 
-console.log(summ(num))
+
+//#4
+
+const rev = function(v) {
+  v = v.reverse()
+return v
+}
